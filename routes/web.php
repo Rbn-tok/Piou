@@ -2,10 +2,16 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\FeedCtrl;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+Route::post('/register', [RegisteredUserController::class, 'store']);
+Route::get('/feeds', [FeedCtrl::class, 'index'])->name('feeds.index')->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
