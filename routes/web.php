@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
 Route::post('/register', [RegisteredUserController::class, 'store']);
-Route::get('/feeds', [FeedCtrl::class, 'index'])->name('feeds.index')->middleware('auth');
+Route::get('/feeds', [FeedCtrl::class, 'index'])->name('pages.feeds.links')->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
