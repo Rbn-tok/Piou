@@ -14,7 +14,7 @@ use Illuminate\Support\Str;
 
 class LinkCtrl extends Controller
 {
-    private function getLinks(Carbon $startedAt, Carbon $endedAt = null)
+    private function getLinks(Carbon $startedAt, ?Carbon $endedAt = null)
     {
         return Link::query()
             ->where('user_id', Auth::id())
