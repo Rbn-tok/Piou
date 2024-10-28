@@ -1,0 +1,83 @@
+$font-google: "Lato";
+$font-size-base: 0.83rem;
+$ti-font-path: "~icons/fonts";
+$icon-stroke-width: 2;
+
+$h1-font-size: 1.35rem;
+$h2-font-size: 1.1rem;
+$h3-font-size: 0.95rem;
+$h4-font-size: 0.875rem;
+// $h4-font-size: 0.75rem;
+
+// $primary: #9b2f1f;
+$primary: #d23b26;
+$black: #141412;
+$body: #e8e8e8;
+
+@import "~tabler/src/scss/tabler";
+@import "~icons/tabler-icons";
+
+:root {
+    --tblr-backdrop-zindex: 999;
+    --tblr-font-sans-serif: "#{$font-google}";
+    --tblr-border-color-translucent: #e2e8f0 !important;
+    --tblr-body-bg: #{$white};
+    --tblr-body-color: #{$black};
+}
+
+.navbar {
+    --tblr-navbar-bg: var(--tblr-bg-surface);
+    --tblr-navbar-border-width: var(--tblr-border-width);
+    --tblr-navbar-active-border-color: var(--tblr-primary);
+    --tblr-navbar-active-bg: rgba(0, 0, 0, 0.06);
+    --tblr-navbar-color: #{$white};
+    --tblr-navbar-border-color: #{$black};
+}
+
+.navbar-nav {
+    --tblr-nav-link-color: #{$white};
+    --tblr-nav-link-hover-color: #{$white};
+    --tblr-nav-link-disabled-color: #{$white};
+}
+
+.modal {
+    --tblr-heading-color: #{$black};
+    --tblr-modal-color: #{$black};
+    z-index: 999;
+
+    .invalid-feedback {
+        display: block !important;
+    }
+}
+
+.modal-backdrop {
+    --tblr-backdrop-zindex: 999 !important;
+}
+
+.search-forms {
+    min-width: 768px;
+
+    @media (max-width: 660px) {
+        display: none;
+    }
+}
+
+.nav-link {
+    .ti {
+        color: #{$primary};
+    }
+}
+
+.navbar-collapse {
+    .navbar-nav {
+        .nav-item {
+            // text-transform: capitalize;
+        }
+    }
+}
+
+.page {
+    > header {
+        background-color: #{$black};
+    }
+}

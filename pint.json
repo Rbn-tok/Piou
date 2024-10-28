@@ -1,0 +1,16 @@
+{
+    "preset": "psr12",
+    "rules": {
+        "@PhpCsFixer": true,
+        "@Symfony": true,
+        "@PSR2": true,
+        "@PSR12": true,
+        "no_superfluous_phpdoc_tags": false,
+        "multiline_whitespace_before_semicolons": true,
+        "phpdoc_align": true,
+        "phpdoc_separation": true,
+        "concat_space": {
+            "spacing": "one"
+        }
+    }
+}

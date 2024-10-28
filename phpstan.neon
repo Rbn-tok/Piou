@@ -1,0 +1,13 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+#    - ./vendor/tomasvotruba/bladestan/config/extension.neon
+
+parameters:
+    paths:
+        - app
+    scanDirectories:
+        - bootstrap
+    level: 5
+    checkMissingIterableValueType: false
+    checkModelProperties: true
+    disableMigrationScan: false

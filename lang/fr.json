@@ -1,0 +1,16 @@
+{
+    "Manage subscriptions": "Gérer les abonnements",
+    "Logout": "Se déconnecter",
+    "You must specify the link of your atom/rss": "Vous devez indiquer le lien du flux RSS ou Atom",
+    "Add a new subscription": "S'abonner à un nouveau flux",
+    "Cancel": "Annuler",
+    "Add": "Ajouter",
+    "Subscription": "Abonnement",
+    "Checked at": "Dernière mise à jour",
+    "Previous": "Précédent",
+    "Next": "Suivant",
+    "Showing": "article",
+    "to": "à",
+    "of": "sur",
+    "results": "resultats possible"
+}
